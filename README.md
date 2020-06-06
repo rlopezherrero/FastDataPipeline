@@ -1,20 +1,33 @@
-## Data sources
+## Software requirements
 
-* **IEX Cloud**: https://iexcloud.io/
-  * Sign up
-  * Tickers URL: https://cloud.iexapis.com/stable/stock/market/collection/sector?collectionName=Technology&token=your_token
+* IDE for Java development (your choice)
+  * https://www.jetbrains.com/idea/download/ (Choose InteliJ Community)
+  * https://www.eclipse.org/downloads/packages/
+* Maven (for dependencies Management)
+  * https://maven.apache.org/download.cgi
+* GIT client (for code  management)
+  * https://git-scm.com/download/win
+* Java Virtual Machine
+  * https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
+* Docker desktop
+  * If you use windows or MacOs you can download and install docker on following link --> https://www.docker.com/products/docker-desktop
 
+## Fast Data Architecture 
 
-## Software used 
+![Exercise architecture](../img/architecture_exercise1.png)
 
-* Docker:  To run this demo you need docker installed. If you use windows or MacOs you can download and install docker on following link --> https://www.docker.com/products/docker-desktop
+* All software used is specified on ![docker compose file](../docker/docker_compose.yml 
 
-* All software used is specified on docker compose file. 
+  * Apache NiFi
+  * Apache Kafka stack (Confluent)
+  * Elastic
+  * Kibana
 
-* Apache NiFi
-* Kafka stack
-* Elastic
-* Kibana
+## Data Source
+* **IEX Cloud**: https://iexcloud.io/ (Register)
+  * Sign up & get your token. 
+  * Stock prices URL: https://cloud.iexapis.com/stable/stock/market/collection/sector?collectionName=Technology&token=your_token
+
 
 ## Launch platform :
 
