@@ -31,10 +31,35 @@
 
 ## Launch platform :
 
-Go inside docker folder and launch all docker containers:
+* Go inside docker folder and launch all docker containers:
 ```
 docker-compose up -d 
 ```
+
+* Open Kibana browser: http://localhost:5601
+   * Go to dev tools and create this mapping to setup a date field
+   ```
+   PUT quotes
+   { 
+    "mappings": {
+      "properties": {
+        "latestUpdate": {
+          "type": "date" 
+        }
+      }
+    }
+   }
+   ```
+
+* Open your IDE and import flink maven project
+  * Launch StreamingStockJob class using topic parameter (stock)
+
+* Open NiFi: http://localhost:8090/nifi 
+  * Using your IEXCloud token setup URL on InvokeHTTP box
+  * Run the pipeline using play button
+  
+* Finally go back to Kibana and impelement your analytics dashboard. 
+
 
 ## Once finished the demo:
 You can stop the containers running:
