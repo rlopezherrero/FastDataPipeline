@@ -10,7 +10,7 @@
 * Java Virtual Machine
   * https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
 * Docker desktop
-  * If you use windows or MacOs you can download and install docker on following link --> https://www.docker.com/products/docker-desktop
+  * If you use windows or MacOs you can download and install docker on following link : https://www.docker.com/products/docker-desktop
 
 ## Fast Data Architecture 
 
