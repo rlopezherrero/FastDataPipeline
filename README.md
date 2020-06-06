@@ -14,9 +14,9 @@
 
 ## Fast Data Architecture 
 
-![Exercise architecture](img/architecture.png)
+![Exercise architecture](img/Architecture.png)
 
-* All software used is specified on ![docker compose file](docker/docker_compose.yml)
+* All software used is specified on ![docker compose file](docker/docker-compose.yml)
 
   * Apache NiFi
   * Apache Kafka stack (Confluent)
